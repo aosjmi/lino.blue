@@ -1,9 +1,9 @@
 baseurl: https://example.com
-languageCode: en-us
+languageCode: ja
 theme: hugo-theme-stack
 paginate: 5
-title: Example Site
-copyright: Example Person
+title: lino.blue
+copyright: aosjmi
 
 languages:
     en:
@@ -18,14 +18,7 @@ languages:
         weight: 2
         params:
             description: 演示说明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            description: وصف تجريبي
-
+ 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
 
@@ -38,7 +31,7 @@ DefaultContentLanguage: en
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
 
 permalinks:
     post: /p/:slug/
@@ -49,10 +42,10 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: static/favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since: 2020
+        since: 2024
         customText:
 
     dateFormat:
@@ -70,13 +63,13 @@ params:
     article:
         math: false
         toc: true
-        readingTime: true
+        readingTime: false
         license:
             enabled: true
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
+        enabled: false
         provider: disqus
 
         disqusjs:
@@ -199,17 +192,10 @@ params:
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
     main: []
-
     social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
-          params:
-              icon: brand-github
-
         - identifier: twitter
           name: Twitter
-          url: https://twitter.com
+          url: https://bsky.app/profile/aosjmi.bsky.social
           params:
               icon: brand-twitter
 
