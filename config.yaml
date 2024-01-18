@@ -14,7 +14,7 @@ disqusShortname: hugo-theme-stack
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
-DefaultContentLanguage: en
+DefaultContentLanguage: ja
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
@@ -41,7 +41,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: ゲ製など
+        subtitle: 狂った月の裏側
         avatar:
             enabled: true
             local: false
@@ -49,15 +49,15 @@ params:
 
     article:
         math: false
-        toc: true
+        toc: false
         readingTime: false
         license:
             enabled: false
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: utterances
 
         disqusjs:
             shortname:
@@ -67,7 +67,7 @@ params:
             adminLabel:
 
         utterances:
-            repo:
+            repo: aosjmi/lino.blue
             issueTerm: pathname
             label:
 
@@ -134,18 +134,17 @@ params:
             id:
     widgets:
         homepage:
-            - type: search
-            - type: archives
-              params:
-                  limit: 5
             - type: categories
               params:
                   limit: 10
             - type: tag-cloud
               params:
                   limit: 10
-        page:
-            - type: toc
+            - type: archives
+              params:
+                  limit: 5
+#        page:
+#            - type: toc
 
     opengraph:
         twitter:
@@ -163,10 +162,10 @@ params:
 
     colorScheme:
         # Display toggle
-        toggle: true
+        toggle: false
 
         # Available values: auto, light, dark
-        default: auto
+        default: dark
 
     imageProcessing:
         cover:
@@ -184,7 +183,7 @@ menu:
           name: blueskyr
           url: https://bsky.app/profile/aosjmi.bsky.social
           params:
-              icon: brand-twitter
+              icon: brand-bluesky
 
 related:
     includeNewer: true
@@ -202,6 +201,7 @@ markup:
         renderer:
             ## Set to true if you have HTML content inside Markdown
             unsafe: false
+            hardWraps: true
     tableOfContents:
         endLevel: 4
         ordered: true
