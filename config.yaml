@@ -1,23 +1,10 @@
-baseurl: https://example.com
+baseurl: https://lino.blue
 languageCode: ja
 theme: hugo-theme-stack
 paginate: 5
 title: lino.blue
 copyright: aosjmi
 
-languages:
-    en:
-        languageName: English
-        title: Example Site
-        weight: 1
-        params:
-            description: Example description
-    zh-cn:
-        languageName: 中文
-        title: 演示站点
-        weight: 2
-        params:
-            description: 演示说明
  
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -42,7 +29,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: static/favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: images/favicon.svg # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
         since: 2024
@@ -53,12 +40,12 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        emoji: 🀄
+        subtitle: ゲ製など
         avatar:
             enabled: true
-            local: true
-            src: img/avatar.png
+            local: false
+            src: images/favicon.svg
 
     article:
         math: false
@@ -163,7 +150,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: aosjmi
 
             # Available values: summary, summary_large_image
             card: summary_large_image
