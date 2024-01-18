@@ -40,7 +40,7 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🀄
+        emoji: 
         subtitle: ゲ製など
         avatar:
             enabled: true
@@ -52,7 +52,7 @@ params:
         toc: true
         readingTime: false
         license:
-            enabled: true
+            enabled: false
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
@@ -180,8 +180,8 @@ params:
 menu:
     main: []
     social:
-        - identifier: twitter
-          name: Twitter
+        - identifier: bluesky
+          name: blueskyr
           url: https://bsky.app/profile/aosjmi.bsky.social
           params:
               icon: brand-twitter
@@ -201,7 +201,7 @@ markup:
     goldmark:
         renderer:
             ## Set to true if you have HTML content inside Markdown
-            unsafe: true
+            unsafe: false
     tableOfContents:
         endLevel: 4
         ordered: true
