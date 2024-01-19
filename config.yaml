@@ -3,7 +3,7 @@ languageCode: ja
 theme: hugo-theme-stack
 paginate: 5
 title: lino.blue
-copyright: aosjmi
+copyright: lino.blue
 
  
 # Change it to your Disqus shortname before using
