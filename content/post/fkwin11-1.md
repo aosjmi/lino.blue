@@ -1,6 +1,7 @@
 ---
 title: mdファイルのテキストエディタを変更
 description: win11の無意味な仕様を無効化する
+image: https://i.gyazo.com/7070cd0de2254e9a238a5bfc3459f422.png
 slug: fkwin11-1
 date: 2024-01-19T13:48:07+09:00
 categories:
