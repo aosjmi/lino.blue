@@ -181,7 +181,7 @@ menu:
     social:
         - identifier: bluesky
           name: blueskyr
-          url: https://bsky.app/profile/aosjmi.bsky.social
+          url: https://bsky.app/profile/lino.blue
           params:
               icon: brand-bluesky
 
