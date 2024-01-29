@@ -2,7 +2,7 @@
 title: 脱チュートリアルヘル②
 description: 立体だからできたこと編
 slug: drawing240129
-image: https://i.gyazo.com/b904813de22a20676e3dd5ef1f015459.png
+image:https://i.gyazo.com/440c79dbdd8e05df284ef370fdf18867.png
 date: 2024-01-29T19:42:20+09:00
 categories:
     - drawing
